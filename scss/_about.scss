@@ -1,0 +1,240 @@
+
+/*------------------------------------------------- */
+/* =  About sections */
+/*------------------------------------------------- */
+
+section.about-section {
+	padding: 100px 0 50px;
+	position: relative;
+	@include retina('../upload/banners/1.jpg', 2, cover, center bottom no-repeat);
+	@extend .back-cover;
+	.about-box {
+		padding-bottom: 60px;
+		border-bottom: 1px solid #dadada;
+		.article-box {
+			padding: 40px 0;
+			span {
+				display: inline-block;
+		        color: $primary-color;
+		        font-size: 18px;
+		        font-family: $font-default;
+		        font-weight: 300;
+		        margin: 0 0 10px;
+			}
+			p {
+				line-height: 28px;
+				margin-bottom: 15px;
+			}
+			a {
+				color: $primary-color;
+		        font-size: 15px;
+		        font-family: $font-default;
+		        font-weight: 400;
+			}
+		}
+		.image-box {
+			padding-left: 50px;
+			padding-bottom: 40px;
+			img {
+				width: 100%;
+				height: auto;
+				@include border-radius(10px);
+				@include box-shadow(0 15px 30px rgba(0,0,0,0.15));
+			}
+		}
+	}
+}
+
+section.about-section.without-background {
+	background: #ffffff;
+	.about-box {
+		border-bottom: 1px solid #ebebeb;
+	}
+	.image-box-holder {
+		position: relative;
+		padding-left: 40px;
+		padding-top: 40px;
+		margin-bottom: 40px;
+		img {
+			max-width: 100%;
+			@include border-radius(6px);
+			@include box-shadow(0 15px 30px rgba(0,0,0,0.15));
+			&.top-image {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+	}
+}
+
+section.about-section2 {
+	padding: 100px 0 50px;
+	.about-box {
+		padding: 0 0 0 20px;
+		position: relative;
+		margin-bottom: 80px;
+		.article-box {
+			padding: 0 40px 0 50px;
+			span {
+				display: inline-block;
+		        color: $primary-color;
+		        font-size: 18px;
+		        font-family: $font-default;
+		        font-weight: 300;
+		        margin: 0 0 10px;
+			}
+			p {
+				line-height: 28px;
+				margin-bottom: 15px;
+			}
+			a {
+				color: $primary-color;
+		        font-size: 15px;
+		        font-family: $font-default;
+		        font-weight: 400;
+			}
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 1px;
+			height: 100%;
+			background: #efefef;
+		}
+	}
+	.video-box {
+		position: relative;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.hover-video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			flex-direction: columns;
+			h2 {
+				font-size: 16px;
+				font-weight: 600;
+				color: #fff;
+				margin-bottom: 0;
+			}
+			a {
+				margin: 0 80px;
+				padding: 15px;
+				@include border-radius(50%);
+				border: 1px solid rgba(255,255,255,0.4);
+				animation-name: stretch-out;
+				animation-duration: 1s; 
+				animation-timing-function: ease-out; 
+				animation-delay: 0s;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+				animation-fill-mode: none;
+				animation-play-state: running; 
+				span {
+					display: inline-block;
+					padding: 15px;
+					background: rgba(255,255,255,0.1);
+					@include border-radius(50%);
+					animation-name: stretch;
+					animation-duration: 1s; 
+					animation-timing-function: ease-out; 
+					animation-delay: 0s;
+					animation-direction: alternate;
+					animation-iteration-count: infinite;
+					animation-fill-mode: none;
+					animation-play-state: running; 
+				}
+				@keyframes stretch {
+					0% {
+						padding: 15px;
+					}
+					100% {
+						padding: 0;
+					}
+				}
+				i {
+					display: inline-block;
+					width: 70px;
+					height: 70px;
+					background: #fff;
+					color: $primary-color;
+					font-size: 18px;
+					line-height: 70px;
+					padding-left: 4px;
+					@include border-radius(50%);
+				}
+				&:hover {
+					background: #fff;
+				}
+			}
+			@keyframes stretch-out {
+				0% {
+					padding: 15px;
+				}
+				100% {
+					padding: 30px;
+				}
+			}
+		}
+	}
+}
+.statistic-box {
+	padding: 80px 0px 0 60px;
+}
+.statistic-post {
+    margin-bottom: 30px;
+   	i {
+        color: $primary-color;
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 42px;
+    }
+    span {
+    	display: inline-block;
+        color: $title-color;
+        font-size: 40px;
+        font-family: $font-default;
+        font-weight: 300;
+    }
+    p {
+        margin-top: 3px;
+        color: #aab6bb;
+    }
+}
+
+section.mision-section {
+	padding: 100px 0 70px;
+	@include retina('../upload/banners/ban3.jpg', 2, cover, center bottom no-repeat);
+	.mision-post {
+		margin-bottom: 30px;
+		span {
+			display: inline-block;
+			@extend .heading1;
+			color: $primary-color;
+			margin-bottom: 0;
+		}
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #cccccc;
+			margin-bottom: 0;
+		}
+	}
+}
+
+section.ban-text-section {
+	padding: 100px 0;
+	text-align: center;
+}

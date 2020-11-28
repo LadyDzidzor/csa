@@ -1,0 +1,139 @@
+
+/*------------------------------------------------- */
+/* =  Contact */
+/*------------------------------------------------- */
+
+#map {
+	width: 100%;
+	height: 480px;
+	@include border-radius(3px);
+	overflow: hidden;
+}
+
+section.contact-section {
+	padding: 70px 0;
+	.contact-info {
+		margin-bottom: 50px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ebebeb;
+		.info-post {
+			margin-bottom: 50px;
+			span {
+				display: inline-block;
+				float: left;
+				width: 60px;
+				height: 60px;
+				border: 1px solid $primary-color-trans;
+				line-height: 58px;
+				color: $primary-color;
+				font-size: 26px;
+				text-align: center;
+				margin: 10px 5px;
+				@include border-radius(50%);
+				position: relative;
+				i {
+					position: relative;
+					z-index: 2;
+				}
+				&:after {
+					content: '';
+					top: -10px;
+					left: -10px;
+					bottom: -10px;
+					right: -10px;
+					position: absolute;
+					border: 1px solid $primary-color;
+					opacity: 0.3;
+					@include border-radius(50%);
+				}
+				&:hover {
+					background: $primary-color;
+					color: #fff;
+				}
+				&:hover:after {
+					background: $primary-color;
+					animation-name: bordermove;
+					animation-duration: 0.8s; 
+					animation-timing-function: ease-out; 
+					animation-delay: 0s;
+					animation-direction: alternate;
+					animation-iteration-count: infinite;
+					animation-fill-mode: none;
+					animation-play-state: running; 
+				}
+				@keyframes bordermove {
+					0% {
+						top: 0px;
+						left: 0px;
+						bottom: 0px;
+						right: 0px;
+					}
+					100% {
+						top: -10px;
+						left: -10px;
+						bottom: -10px;
+						right: -10px;
+					}
+				}
+			}
+			.info-content {
+				margin-left: 100px;
+				h2 {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	.title-section {
+		margin-bottom: 30px;
+		margin-top: 10px;
+		span {
+			margin-bottom: 0;
+		}
+	}
+    #contact-form {
+		margin: 0;
+		text-align: center;
+		input[type="text"],
+		textarea {
+			width: 100%;
+			padding: 10px 20px;
+			background: transparent;
+			color: $third-color;
+			font-size: 15px;
+			font-family: $font-default;
+			font-weight: 300;
+			outline: none;
+			border: 1px solid #ebebeb;
+			margin: 0 0 30px;
+			@include transition(0.2s);
+			@include border-radius(2px);
+		}
+		input[type="text"]:focus,
+		textarea:focus {
+			border: 1px solid $primary-color;
+		}
+		textarea {
+			height: 120px;
+			margin-bottom: 30px;
+		}
+		input[type="submit"] {
+			padding: 0.625rem 3rem;
+	        color: #ffffff;
+	        font-size: 15px;
+	        font-weight: 400;
+	        border: none;
+	        background: $primary-color;
+	        font-family: $font-default;
+	        outline: none;
+	        margin: 0;
+	        cursor: pointer;
+	        @include border-radius(1.75rem);
+	        @include transition(0.2s);
+		}
+		input[type="submit"]:hover {
+	        background: $primary-color;
+	        @include box-shadow(0 5px 14px rgba(0,0,0,0.1));
+		}
+	}
+}

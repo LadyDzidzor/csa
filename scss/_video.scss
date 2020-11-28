@@ -1,0 +1,56 @@
+
+/*------------------------------------------------- */
+/* =  Video section */
+/*------------------------------------------------- */
+
+section.video-section {
+	padding: 100px 0 0;
+	margin-bottom: 72px;
+	@include retina('../upload/banners/ban2.jpg', 2, cover, center bottom no-repeat);
+	.video-box {
+		max-width: 970px;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		img {
+			width: 100%;
+			height: auto;
+			@include border-radius(6px);
+			@include box-shadow(0 20px 30px rgba(0,0,0,0.16));
+			margin-bottom: -72px;
+		}
+		a.video-link {
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+			left: 50%;
+			margin-left: -150px;
+			padding: 15px;
+			border: 1px solid rgba(255,255,255,0.5);
+			color: #fff;
+			font-size: 16px;
+			font-family: $font-default;
+			background: rgba(255,255,255,0.1);
+			@include border-radius(50px);
+			i {
+				text-align: center;
+				display: inline-block;
+				color: $primary-color;
+				background: #fff;
+				width: 70px;
+				height: 70px;
+				margin-right: 35px;
+				line-height: 70px;
+				@include border-radius(50%);
+			}
+			span {
+				line-height: 70px;
+				padding-right: 60px;
+			}
+			&:hover {
+				background: #fff;
+				color: $primary-color;
+			}
+		}
+	}
+}

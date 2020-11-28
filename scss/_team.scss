@@ -1,0 +1,100 @@
+
+/*------------------------------------------------- */
+/* =  Team Sections */
+/*------------------------------------------------- */
+
+
+section.team-section {
+    padding: 100px 0 0;
+    background: #ffffff;
+    .team-box {
+        padding-bottom: 70px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .team-post {
+        margin-bottom: 30px;
+        text-align: center;
+        .post-gal {
+            position: relative;
+            img {
+                width: 100%;
+                height: auto;
+                @include border-radius(5px);
+            }
+        }
+        .post-gal-hover {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include border-radius(5px);
+            background: rgba(255,255,255,0.4);
+            opacity: 0;
+            @include transition(0.2s);
+        }
+        .post-social {
+            @extend .reset-elem;
+            li {
+                display: inline-block;
+                margin: 0 2px 0;
+                a {
+                    display: inline-block;
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 12px;
+                    line-height: 26px;
+                    border: 2px solid transparent;
+                    @include border-radius(50%);
+                }
+                a.facebook {
+                    background: #6666cc;
+                }
+                a.twitter {
+                    background: #3399cc;
+                }
+                a.instagram {
+                    background: #cc66cc;
+                }
+                a.linkedin {
+                    background: #3399cc;
+                }
+                a:hover {
+                    background: transparent !important;
+                    border-color: #fff;
+                }
+            }
+        }
+        .post-content {
+            padding-top: 24px;
+            h2 {
+                margin-bottom: 0;
+            }
+            span {
+                display: inline-block;
+                color: #aab6bb;
+                font-family: $font-default;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+        &:hover {
+            .post-gal-hover {
+                opacity: 1;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+            }
+        }
+    }
+}
+
+section.team-section.grey-style {
+    background: #f6f6f7;
+}
+

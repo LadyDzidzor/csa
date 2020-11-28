@@ -1,0 +1,120 @@
+
+/*------------------------------------------------- */
+/* =  Header
+ *------------------------------------------------- */
+
+header {
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 999999;
+}
+
+.navbar {
+    padding: 0;
+    @include transition(0.2s);
+    border-bottom: none;
+    width: 100%;
+    z-index: 999999;
+    background: transparent !important;
+    border-bottom: 1px solid rgba(204,204,204, 0.3);
+    
+    a.navbar-brand {
+        float: none;
+        margin-left: -15px;
+        img {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+header.active {
+    background: #232323 !important;
+}
+
+.navbar-nav {
+    @include transition(0.2s);
+    margin-right: -15px;
+    > li > a {
+        color: #dadada !important;
+        font-size: 16px;
+        font-weight: 400 !important;
+        font-family: $font-default;
+        @include transition(0.2s);
+        padding: 40px 10px 36px !important;
+        margin: 0 7px -1px;
+        position: relative;
+        border-bottom: 1px solid transparent;
+        i {
+            font-size: 13px;
+            margin-left: 10px;
+        }
+    }
+    > li:last-child > a {
+        padding-right: 0 !important;
+        margin-right: 0;
+    }
+    > li > a.active,
+    > li > a:hover {
+        color: #ffffff !important;
+        border-bottom: 1px solid #fff;
+    }
+    li.drop-link {
+        position: relative;
+    }
+}
+
+.navbar-nav.active {
+    > li > a {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.navbar-collapse {
+    position: relative;
+}
+
+.dropdown {
+    @extend .reset-elem;
+    position: absolute;
+    border-top: 2px solid $primary-color;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 10px;
+    @include transition(0.15s);
+    > li {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid #e3e1f3;
+        a {
+            display: block;
+            padding: 15px 20px;
+            color: #6c7a89;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: $font-default;
+        }
+        > a:hover {
+            background: #f2f4f8;
+            color: $primary-color;
+        }
+        .dropdown.level2 {
+            top: -2px;
+            left: 100%;
+            border-left: 1px solid #292929;
+        }
+    }
+}
+li:hover > .dropdown {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -1px;
+}

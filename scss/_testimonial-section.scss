@@ -1,0 +1,236 @@
+
+/*------------------------------------------------- */
+/* =  testimonial section
+/*------------------------------------------------- */
+
+section.testimonial-section {
+	background: #fff;
+	padding-top: 70px;
+	text-align: center;
+	i {
+		color: #fff;
+		display: inline-block;
+		font-size: 34px;
+		width: 70px;
+		height: 70px;
+		text-align: center;
+		line-height: 70px;
+		background: #e1e2e6;
+		@include border-radius(50%);
+		margin-bottom: 25px;
+	}
+	.testimonial-box {
+		padding: 80px 0;
+		border-top: 1px solid #ebebeb;
+		.testimonial-post {
+			margin-bottom: 0px;
+			img {
+				@include border-radius(50%);
+				margin-bottom: 25px;
+				max-width: 100px;
+				height: auto;
+			}
+			p {
+				font-size: 18px;
+				max-width: 770px;
+				font-style: italic;
+				margin: 0 auto 15px;
+				line-height: 30px;
+				@include transition(0.2s);
+			}
+			h2 {
+				margin-bottom: 5px;
+			}
+			h3 {
+				font-size: 15px;
+				margin-bottom: -6px;
+				font-weight: 500;
+			}
+			span {
+				color: #cccccc;
+				font-size: 15px;
+				font-family: $font-default;
+				font-weight: 300;
+				display: inline-block;
+				margin-bottom: 30px;
+			}
+			p.testimonial-number {
+				font-style: normal;
+				font-size: 15px;
+				font-weight: 400;
+				color: #cccccc;
+				max-width: 60px;
+				margin: 0 auto;
+				span {
+					color: $title-color;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.owl-controls {
+			margin-top: -31px;
+			z-index: 999;
+			position: relative;
+		}
+		.owl-pagination {
+			display: none;
+		}
+		.owl-buttons {
+			display: block;
+		}
+		.owl-buttons div {
+			background: transparent;
+			margin: 0;
+			padding: 0;
+			color: #aaaaaa;
+			@include transition(0.2s);
+			&:hover {
+				color: $title-color;
+			}
+		}
+		.owl-buttons div.owl-prev {
+			margin-right: 40px;
+		}
+		.owl-buttons div.owl-next {
+			margin-left: 40px;
+		}
+		.owl-buttons div.owl-prev:before {
+			content: '\f120';
+			font-family: 'LineAwesome';
+			font-size: 20px;
+		}
+		.owl-buttons div.owl-next:before {
+			content: '\f121';
+			font-family: 'LineAwesome';
+			font-size: 20px;
+		}
+	}
+}
+
+section.testimonial-section.without-border {
+	.testimonial-box {
+		padding-top: 0;
+		border: none;
+	}
+}
+
+
+section.testimonial-section2 {
+    padding: 100px 0 0;
+    background: #f6f6f7;
+    margin-bottom: -40px;
+    .testimonial-box {
+        margin-left: -15px;
+        margin-right: -15px;
+        .item {
+        	padding-bottom: 40px;
+        }
+        .testimonial-post {
+            text-align: center;
+            padding: 0 30px 40px;
+            background: #fff;
+            @include box-shadow(0 15px 25px rgba(0,0,0,0.05));
+            span.quote {
+                margin-top: -35px;
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                background: $primary-color;
+                @include border-radius(50%);
+                margin-bottom: 30px;
+                color: #fff;
+                font-size: 30px;
+                line-height: 70px;
+            }
+            p {
+            	margin-bottom: 30px;
+            }
+            span.name-quote {
+            	display: block;
+                color: $title-color;
+                font-size: 16px;
+                font-family: $font-default;
+                font-weight: 500;
+                margin-bottom: -4px;
+            }
+            span.name-desc {
+            	display: block;
+                color: #ccc;
+                font-size: 16px;
+                font-family: $font-default;
+                font-weight: 300;
+            }
+        }
+        .owl-controls {
+			margin-top: -31px;
+			z-index: 999;
+			position: relative;
+			position: absolute;
+			top: 50%;
+			margin-top: -25px;
+			width: 100%;
+		}
+		.owl-pagination {
+			display: none;
+		}
+		.owl-buttons {
+			display: block;
+		}
+		.owl-buttons div {
+			background: transparent;
+			margin: 0;
+			padding: 0;
+			color: #aaaaaa;
+			@include transition(0.2s);
+			width: 50px;
+			height: 50px;
+			border: 1px solid #cccccc;
+			text-align: center;
+			line-height: 48px;
+			&:hover {
+				color: #fff;
+				background: $primary-color;
+				border-color: transparent;
+			}
+		}
+		.owl-buttons div.owl-prev {
+			float: left;
+			margin-left: -60px;
+		}
+		.owl-buttons div.owl-next {
+			float: right;
+			margin-right: -60px;
+		}
+		.owl-buttons div.owl-prev:before {
+			content: '\f120';
+			font-family: 'LineAwesome';
+			font-size: 20px;
+		}
+		.owl-buttons div.owl-next:before {
+			content: '\f121';
+			font-family: 'LineAwesome';
+			font-size: 20px;
+		}
+    }
+    .item {
+        padding: 35px 15px 15px;
+    }
+}
+
+.owl-theme .owl-controls {
+	margin-top: 40px;
+}
+.owl-theme .owl-controls .owl-buttons {
+	display: none;
+}
+.owl-theme .owl-controls .owl-page span {
+	background: #999999;
+	border: 2px solid transparent;
+	width: 10px;
+	height: 10px;
+	@include border-radius(50%);
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	background: transparent;
+	border-color: #e0e0e0;
+}

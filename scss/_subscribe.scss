@@ -1,0 +1,91 @@
+
+/*------------------------------------------------- */
+/* =  Subscribe section */
+/*------------------------------------------------- */
+
+section.subscribe-section {
+	padding: 100px 0;
+	text-align: center;
+	p {
+		font-size: 14px;
+		color: $third-color;
+        margin-bottom: 0;
+	}
+	.subscribe-title {
+		margin-bottom: 20px;
+		h2 {
+			margin-bottom: 4px;
+		}
+		p {
+			color: $text-color;
+			margin-bottom: 0;
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+	form {
+        margin: 0;
+        input[type="text"] {
+            width: 400px;
+            max-width: 100%;
+            padding: 12px 20px;
+            background: #ffffff;
+            border: 1px solid #e0e2e5;
+            @include border-radius(0);
+            margin: 0 0 30px;
+            color: #666666;
+            font-size: 15px;
+            font-family: $font-alternative;
+            font-weight: 300;
+            outline: none;
+            @include border-top-left-radius(28px);
+            @include border-bottom-left-radius(28px);
+        }
+        button {
+            background: $primary-color;
+            width: 180px;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: $font-default;
+            font-weight: 400;
+            border: 1px solid $primary-color;
+            outline: none;
+            @include border-radius(0px);
+            @include border-top-right-radius(28px);
+            @include border-bottom-right-radius(28px);
+            padding: 12px 10px 13px;
+            margin: 0 0 30pxpx;
+            margin-left: -6px;
+            @include transition(0.2s);
+            i {
+            	margin-left: 10px;
+            }
+            &:hover {
+	            opacity: 0.7;
+	        }
+        }
+    }
+}
+
+section.subscribe-section.second-style {
+    @include retina('../upload/banners/ban1.jpg', 2, cover, center bottom no-repeat);
+    p {
+        color: #e0d1f5;
+    }
+    .subscribe-title {
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #e0d1f5;
+        }
+    }
+    form {
+        button {
+            width: 70px;
+            i {
+                margin: 0;
+            }
+        }
+    }
+}

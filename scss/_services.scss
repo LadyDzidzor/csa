@@ -1,0 +1,143 @@
+
+/*------------------------------------------------- */
+/* =  services page */
+/*------------------------------------------------- */
+
+section.services-section {
+	padding: 100px 0 0;
+	margin-bottom: 250px;
+	@include retina('../upload/banners/ban1.jpg', 2, cover, center bottom no-repeat);
+	.services-title {
+		margin-bottom: 50px;
+		h1 {
+			color: #fff;
+		}
+		.button-holder {
+			padding-top: 20px;
+			text-align: right;
+		}
+	}
+	.services-box {
+		padding-bottom: 15px;
+		.services-post {
+			margin-bottom: -250px;
+			img {
+				width: 100%;
+				height: auto;
+				@include border-radius(5px);
+			}
+			.services-content {
+				padding: 20px 20px 0;
+				span {
+					color: $primary-color;
+				}
+			}
+			
+		}
+	}
+}
+
+section.services-section2 {
+	padding: 100px 0 60px;
+	.services-box {
+		.services-post {
+			margin-bottom: 50px;
+			background: #fff;
+			text-align: center;
+			a {
+				width: 70px;
+				height: 70px;
+				border: 1px solid $primary-color-trans;
+				line-height: 68px;
+				color: $primary-color;
+				font-size: 34px;
+				text-align: center;
+				@include border-radius(50%);
+				margin-bottom: 30px;
+				position: relative;
+				i {
+					position: relative;
+					z-index: 2;
+				}
+				&:after {
+					content: '';
+					top: -10px;
+					left: -10px;
+					bottom: -10px;
+					right: -10px;
+					position: absolute;
+					border: 1px solid $primary-color;
+					opacity: 0.3;
+					@include border-radius(50%);
+				}
+				&:hover {
+					background: $primary-color;
+					color: #fff;
+				}
+				&:hover:after {
+					background: $primary-color;
+					animation-name: bordermove;
+					animation-duration: 0.8s; 
+					animation-timing-function: ease-out; 
+					animation-delay: 0s;
+					animation-direction: alternate;
+					animation-iteration-count: infinite;
+					animation-fill-mode: none;
+					animation-play-state: running; 
+				}
+				@keyframes bordermove {
+					0% {
+						top: 0px;
+						left: 0px;
+						bottom: 0px;
+						right: 0px;
+					}
+					100% {
+						top: -10px;
+						left: -10px;
+						bottom: -10px;
+						right: -10px;
+					}
+				}
+			}
+			p {
+				color: #999999;
+			}
+		}
+	}
+}
+
+section.what-we-do {
+	background: #f6f6f7;
+	overflow: hidden;
+	position: relative;
+	padding: 70px 0;
+	.article-box {
+		span {
+			display: inline-block;
+	        color: $primary-color;
+	        font-size: 18px;
+	        font-family: $font-default;
+	        font-weight: 300;
+	        margin: 0 0 10px;
+		}
+		p {
+			line-height: 28px;
+			margin-bottom: 15px;
+		}
+		a {
+			color: $primary-color;
+	        font-size: 15px;
+	        font-family: $font-default;
+	        font-weight: 400;
+		}
+	}
+	.image-back-holder {
+		position: absolute;
+		top: 0;
+		left: 55%;
+		right: 0;
+		bottom: 0;
+		@include retina('../upload/others/s4.jpg', 2, cover, center bottom no-repeat);
+	}
+}

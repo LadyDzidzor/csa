@@ -1,0 +1,99 @@
+<section class="about-section2">
+			<div class="container">
+				<div class="about-box">
+					<!-- <div class="row">
+						<div class="col-lg-6">
+							<div class="article-box">
+								<span>What We Do</span>
+								<h1>Hospitality & <br>Recruitment</h1>
+								<p>Customer Service Africa is a hospitality and Recruitment company that is primarily established to promote hospitality
+								customer service and to recruit skilled professionals for the industry in Africa. Customer Service Africa was born out
+								of poor delivery of services to our guests/customers across Africa especially in the hospitality and tourism sector
+								which should rather be the leader of great customer service, customer satisfaction and customer experience.</p>
+								<a href="about.html" class="text-btn">Read More About Us <i class="la la-long-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="article-box">
+								<span></span>
+								<h1>In recent times...</h1>
+								<p> ...the hospitality industry and corporate organizations are faced with bad customer service due to customer complaints and
+								generally unhappy customers due to the lack of skilled, passionate and customer-oriented professionals for the job. It
+								is for the reason that CSA seeks to provide the perfect opportunity for the hospitality and corporate organizations
+								(Hotels, Airlines, Cooperate Organizations and Startups) to really appreciate the importance of customer service in
+								their establishments and invest in their training. </p>
+								<a href="about.html" class="text-btn">Read More About Us <i class="la la-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div> -->
+
+
+                    <div class="row">
+							<div class="col-lg-6">
+								<div class="article-box">
+									<span>What We Do</span>
+									<h1>Hospitality & <br>Recruitment</h1>
+									<p>Customer Service Africa is a hospitality and Recruitment company that is primarily established to promote hospitality
+									customer service and to recruit skilled professionals for the industry in Africa. Customer Service Africa was born out
+									of poor delivery of services to our guests/customers across Africa especially in the hospitality and tourism sector
+									which should rather be the leader of great customer service, customer satisfaction and customer experience. </p>
+									<a href="about.html" class="text-btn">Read More About Us <i class="la la-long-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="image-box">
+									<img src="upload/others/ab1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+				</div>
+
+
+                <div class="statistic-box">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="statistic-post">
+								<i class="la la-gift"></i>
+								<span class="timer" data-from="0" data-to="125"></span>
+								<p>Completed Projects</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="statistic-post">
+								<i class="la la-history"></i>
+								<span class="timer" data-from="0" data-to="17"></span>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="statistic-post">
+								<i class="la la-user"></i>
+								<span class="timer" data-from="0" data-to="583"></span>
+								<p>Verified Happy Client</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="statistic-post">
+								<i class="la la-certificate"></i>
+								<span class="timer" data-from="0" data-to="25"></span>
+								<p>Time Award Winner</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="video-box">
+					<img src="upload/others/ab3.jpg" alt="">
+					<div class="hover-video">
+						<h2>Unique Solutions for Your Business</h2>
+						<a class="video-link iframe" href="https://vimeo.com/81102131"><span><i class="fa fa-play"></i></span></a>
+						<h2>Just a Perfect Place to Get Started</h2>
+					</div>
+				</div>
+
+			</div> -->
+		</section>
+		<!-- End about section -->
+
+
+        
