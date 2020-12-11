@@ -403,7 +403,7 @@ section.page-banner-section {
   /*
      * Set a base background for 1x environments.
      */
-  background: #111 url("../upload/banners/page-ban.jpg") center center no-repeat;
+  background: #111 url("../upload/banners/csa-bg.png") center center no-repeat;
   background-size: cover;
   /*
      * Create an @2x-ish media query.
@@ -418,11 +418,11 @@ section.page-banner-section {
    */ }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     section.page-banner-section {
-      background: #111 url("../upload/banners/page-ban@2x.jpg") center center no-repeat;
+      background: #111 url("../upload/banners/csa-bg2.png") center center no-repeat;
       background-size: cover; } }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     section.page-banner-section {
-      background: #111 url("../upload/banners/page-ban@2x.jpg") center center no-repeat;
+      background: #111 url("../upload/banners/csa-bg2.png") center center no-repeat;
       background-size: cover; } }
   section.page-banner-section .page-banner-box {
     padding: 140px 0 90px; }
@@ -2832,7 +2832,7 @@ section.mision-section {
   /*
      * Set a base background for 1x environments.
      */
-  background: #111 url("../upload/banners/ban3.jpg") center bottom no-repeat;
+  background: #111 url("../upload/banners/bg-banner.png") center bottom no-repeat;
   background-size: cover;
   /*
      * Create an @2x-ish media query.
@@ -2851,7 +2851,7 @@ section.mision-section {
       background-size: cover; } }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     section.mision-section {
-      background: #111 url("../upload/banners/ban3@2x.jpg") center bottom no-repeat;
+      background: #111 url("../upload/banners/bg-banner22.png") center bottom no-repeat;
       background-size: cover; } }
   section.mision-section .mision-post {
     margin-bottom: 30px; }
@@ -2860,9 +2860,9 @@ section.mision-section {
       color: #f26c20;
       margin-bottom: 0; }
     section.mision-section .mision-post h2 {
-      color: #fff; }
+      color: rgb(255, 255, 255); }
     section.mision-section .mision-post p {
-      color: #cccccc;
+      color: #fff;
       margin-bottom: 0; }
 
 section.mision-section2 {
